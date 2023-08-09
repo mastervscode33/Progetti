@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App - Api</title>
+    <!-- Google Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <main>
+        <h2>Weather App</h2>
+        <br>
+        <div class="content">
+            <h1></h1>
+            <form method="get" onsubmit="return false;" id="form_weather">
+                <span class="material-symbols-rounded">
+                    search
+                    </span>
+                <input type="text" name="citta" id="citta">
+                <button type="submit">Cerca</button>
+            </form>
+                <p id="error"></p>
+            <div class="response">
+                <h1 id="citta_display"></h1>
+                <p id="coordinate"></p>
+                <img src="" id="weather">
+                <div id="dati">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            device_thermostat
+                            </span>
+                            <p>Gradi</p>
+                            <p id="gradi"></p>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            humidity_percentage
+                            </span>
+                            <p>Umidità</p>
+                            <p id="umidita"></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <br>
+        <p>*Clicca il tasto cerca per trovare i dati temporali della città che cerchi</p>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
