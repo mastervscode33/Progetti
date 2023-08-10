@@ -1,5 +1,5 @@
 // Chiave della API
-    let api_key = "ac13afe2c5dd229b3f3517533d735a48";
+    let api_key = "";
 
 let form_weather = document.getElementById("form_weather");
 let citta_input = document.getElementById("citta");
